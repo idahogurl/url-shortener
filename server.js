@@ -111,5 +111,10 @@ app.get("/:id",
     }
 );
 
-var port = "3000";
-app.listen(port, "127.0.0.1");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, 
+    function () 
+    {
+    console.log("App listening on port " + PORT);
+    }
+);

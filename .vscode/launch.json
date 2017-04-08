@@ -8,16 +8,15 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/server.js",
-            "address": "0.0.0.0"
+            "program": "${workspaceRoot}/index.js"
         },
         {
             "type": "node",
             "request": "attach",
             "name": "Attach to Port",
             "address": "0.0.0.0",
-            "port": 3000,
-            "protocol": "legacy"
+            "protocol": "legacy",
+            "port": 5858
         }
     ]
 }
